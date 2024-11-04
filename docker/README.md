@@ -10,3 +10,12 @@
         - 例えばMySQLを既にホストOSでインストールしているが、開発では別のバージョンで開発したいときはコンテナ内でMySQLをインストールすればホストOSには影響しない
 
       - 複数の開発環境を一つのホストOS上で実現したい
+
+### Docker compose とは
+- 複数のコンテナを定義し実行するDockerアプリケーションのためのツール
+  - そのため複数のDockerコンテナをまとめて起動したいときに使える
+    - docker-compose.ymlは複数コンテナを操作する際の設計書のようなもの
+
+> 参考動画: https://www.youtube.com/watch?v=M3h_z-9DoMQ
+> 参考記事：https://o2mamiblog.com/docker-beginner-2/
+> 例え：https://qiita.com/rawHam/items/80ba13d2d2d56dba411e
