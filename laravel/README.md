@@ -37,6 +37,102 @@
 - ORMの１つであり、エロクエントという
   - Modelを使って関係するデータベースとの対応付けをうまく行ってくれる機能
 
-### bladeファイル
+### blade 分割と継承
 
-- テンプレートエンジンの１つ
+- `@extends('ファイル名')`で継承する親のbladeを指定（親bladeは継承先の子bladeファイルで共通しているhtmlを記述）
+  - 引数は`resources/views/`以降のパスを.区切りで指定し、拡張子は省略可能
+- 継承先の子bladeの`@section('content') ~ @endsection`で囲われた部分を、親Bladeの`@yield('content')`の部分に挿入する
+  - 引数に同じ文字列'content'を指定することで、@section()と@yield()を紐づけています
+
+### ymlファイルの設定
+
+- environmentにDBの設定を書いておけばコンテナ立ち上げで自動で作成される？
+
+### Schema
+
+- `php artisan db:seed`でなぜ`DatabaseSeeder`クラスの`call`メソッドが実行されるのか
+
+### middlewareの重要性
+
+- ミドルウェアとはリクエストがルート設定で割り振られた後のコントローラーの処理の前または後で処理で実行する
+
+- 例）ログイン済みユーザーのみトップページを表示する（未ログインユーザーはログインページにリダイレクト）という処理
+  - ミドルウェアが設定されていない場合：
+    1. ルーターが処理を割り振る
+    2. コントローラーに処理が受け渡される
+  - ミドルウェアが設定されている場合：
+    1. コントローラーで処理が実行される前にミドルウェアが実行される
+
+Laravelでは`app/Http/Kernel.php`にミドルウェア情報が設定されている
+
+
+### 名前付きルート
+
+画面遷移する際にURLをhref属性に直指定するとURLに変更があった場合に関連する全ての記述を修正する必要があり保守性や可読性が低い
+それを解消するのが名前付きルート
+
+1. ルート定義に`->name('ルート名')`を定義
+2. `href="{{ route('todo.create') }}"`のように`route('ルート名')`とすることでルート名からそのルートで設定したURLを生成することができる
+
+つまり、`route('todo.create')`を実行した時の返り値は`http://localhost:8080/todo/create`という文字列になるということ
+
+
+### メソッドインジェクション
+
+- メソッドの引数の左側にクラス名を書くことでインスタンス化が自動で行われる
+  - `public function store(Request $request)`
+
+
+### 一括代入の脆弱性と$fillable
+
+> 参考記事：https://qiita.com/monji586/items/58d91891caa51b514166
+
+### Illuminate
+
+
+### Interfaceとトレイトどっちがいいのか
+
+
+### サービスコンテナ
+
+
+### artisanコマンド
+
+
+### 遅延プロバイダ
+
+
+### implements
+
+
+### Carbon
+
+
+### Memcached
+
+
+### Redis
+
+
+### phpunit
+
+
+### resourceメソッド（ルート定義）
+
+
+### groupメソッド（ルート定義）
+
+
+### matchメソッド（ルート定義）
+
+
+### @component @endcomponent  @slot @endslot  @push @endpush
+
+
+### Factory
+
+
+### Form::open, Form::hidden, Form::submit, Form::close
+
+
+### ルート定義のparameterメソッド
