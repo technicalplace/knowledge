@@ -9,4 +9,4 @@
 
 
 ### ER図
-> 参考記事：ルート定義で同じ「/」のパスだがクエリパラメーターがつくほうがあるのと、クエリパラメーターはつかずindex.blade.phpを表示する２つのru-to 
+> 参考記事：https://it-koala.com/entity-relationship-diagram-1897
