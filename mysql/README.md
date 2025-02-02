@@ -8,5 +8,9 @@
   自動更新: ON UPDATE CURRENT_TIMESTAMPのように、行が更新されるたびに自動的に値が更新される設定がある場合にも、この属性が付与されます。
 
 
+### bigIncrements()
+
+
+
 ### ER図
 > 参考記事：https://it-koala.com/entity-relationship-diagram-1897
