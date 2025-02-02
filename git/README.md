@@ -26,3 +26,20 @@
 `git branch -m 新しいブランチ名`
 変更したいブランチに移動してから実行する
 `-m`はmodify（変更）の`m`
+
+## 色々書いたけどやっぱり元に戻したい
+`git checkout ファイル名`でファイルを元に戻す
+> https://arc.net/l/quote/ercogrsf
+
+# クローン
+
+## .の意味
+
+`git clone リポジトリ名 .`
+上記の「.」の意味はクローンしてきたときにリポジトリ名のフォルダを作らないようにする
+つまり`project`という名前のフォルダを作成してそこに`project`のリポジトリ名をクローンしてくると`project`フォルダが2つできてしまう。
+だが、.をつけてクローンするとコードだけクローンしてこれる
+
+> 参考：https://orfool.com/programing/git-clone-without-dir/
+
+

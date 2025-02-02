@@ -29,3 +29,7 @@
 
 
 > 参考記事：https://blog.senseshare.jp/query-prepare.html
+
+### $_SERVER
+- サーバーが生成するヘッダー情報、パス情報、スクリプトの位置などの情報を提供する
+- 連想配列として`$_SERVER['キー名']`という形で呼び出す
