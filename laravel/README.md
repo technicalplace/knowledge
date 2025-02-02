@@ -141,6 +141,12 @@ Laravelでは`app/Http/Kernel.php`にミドルウェア情報が設定されて�
 
 
 ### Factory
+- テストデータを大量に作りたいときに便利
+`php artisan make:factory PostFactory`
+
+Fakerはライブラリ
+
+> 参考記事：https://qiita.com/tosite0345/items/1d47961947a6770053af
 
 
 ### Form::open, Form::hidden, Form::submit, Form::close
