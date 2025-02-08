@@ -43,3 +43,11 @@
 > 参考：https://orfool.com/programing/git-clone-without-dir/
 
 
+
+### git pull と git fetch merge の違い
+- `git fetch`はリモートからローカルに情報を引っ張ってくるがローカルのブランチまではいかない
+- `git fetch`したあとに`git merge`しないとローカルブランチには反映されない
+
+- 上記2つの手順を1回でやるのが`git pull`
+
+> 参考記事：https://qiita.com/wann/items/688bc17460a457104d7d
