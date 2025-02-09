@@ -25,3 +25,11 @@ export const config = {
 ```
 - Next公式：https://nextjs.org/docs/app/building-your-application/routing/middleware
 - 参考記事：https://zenn.dev/hayato94087/articles/ec16174696a375
+
+### ルートグループ
+- Next.jsのappRouterはappディレクトリ配下がパスになる
+そのためuserディレクトリ、adminディレクトリのようにグループ分けするときにパスが長くなってしまう。
+これを回避するためにルートグループを作成することができる
+使い方は簡単で(main)や(admin)のようにカッコをつけた名前でディレクトリを作成すればいい
+
+> 参考動画：https://www.udemy.com/course/nextjs-fullstack/learn/lecture/42377760#overview
