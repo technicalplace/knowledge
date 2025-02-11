@@ -33,3 +33,9 @@ export const config = {
 使い方は簡単で(main)や(admin)のようにカッコをつけた名前でディレクトリを作成すればいい
 
 > 参考動画：https://www.udemy.com/course/nextjs-fullstack/learn/lecture/42377760#overview
+
+### ルートハンドラー
+
+- ルートハンドラーとはexpressやNest.jsで開発されていたAPIをNext.js上で開発するためのもの
+
+- デフォルトでは静的ビルドのため取得するデータが決まっている場合はいいが、SNSなどユーザーの動作によって取得するデータが変わる場合、データが更新されず古いデータが表示される問題が発生する
