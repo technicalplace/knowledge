@@ -32,3 +32,11 @@
 - 要素に対してクリックイベントを無効にする
 - 上記だけではなく親要素をクリック不可にして子要素をクリック可能にすることができる
   > 参考記事：https://tips-web.net/how-to-clickable-only-child-elements/
+
+
+### line-clamp
+
+-  n 行目移行が非表示にすることができる
+
+> 参考記事：https://zenn.dev/aew2sbee/articles/tailwind-css-line-clamp
+> 参考記事：https://blog.to-ko-s.com/tailwind-css-truncate-line-clamp/
