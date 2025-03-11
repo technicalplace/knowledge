@@ -57,3 +57,10 @@ JavaScriptを使って、このDOMを操作することができます。例え�
 document: これはブラウザが表示しているウェブページ全体を表すDOMオブジェクトです。JavaScriptやjQueryを使って、このdocumentオブジェクトを操作することで、ページの内容やスタイルを動的に変更することができます。
 $(document): jQueryのシンタックスで、documentオブジェクトをjQueryオブジェクトとしてラップします。これにより、jQueryのメソッドを使ってdocumentに対して様々な操作を行うことができます。
 例えば、$(document).ready(function() { ... });というコードは、HTML文書が完全に読み込まれた後に実行したい処理を指定するために使われます。これは、ページの読み込みが完了した時点で、指定した関数を実行するための一般的な方法です。
+
+
+### gsap
+
+- アニメーションを作成するためのJavaScriptライブラリ
+
+> 参考記事 : https://qiita.com/k_watanabe_51/items/264542b564187d95a3e4
