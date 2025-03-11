@@ -27,3 +27,26 @@
 
 ### 文字コード utf-8について
 - htmlの文字コード（utf-8）とそれを表示するブラウザの文字コードが異なると文字化けが発生する、そのためmeta情報に文字コードの指定をする
+
+
+### scss @content
+
+- `@include sp {}`の部分が`@content`の部分に挿入される
+
+> 参考記事：https://qiita.com/annaaida/items/a0794a6d38fc1327085a#content-%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9
+
+```scss
+@mixin hoge {
+  @media screen and (max-width: ◯◯px) {
+    @content;
+  }
+}
+```
+
+`使用側`
+
+```scss
+@use "mixin(ファイルまでのパス)" as mixin;
+@include mixin.hoge {
+  // スタイル
+}
