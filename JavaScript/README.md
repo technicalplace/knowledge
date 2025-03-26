@@ -63,4 +63,32 @@ $(document): jQueryのシンタックスで、documentオブジェクトをjQuer
 
 - アニメーションを作成するためのJavaScriptライブラリ
 
+> 公式：https://gsap.com/docs/v3/Plugins/ScrollToPlugin
+
 > 参考記事 : https://qiita.com/k_watanabe_51/items/264542b564187d95a3e4
+
+
+### gsap 横スクロールが終わったら下へスクロール可能にするアニメーション
+
+> 参考記事：https://liginc.co.jp/548232
+
+
+### スリックカルーセル（中央の画像だけ少し大きく表示）
+
+> 参考記事：https://www.weblab.co.jp/blog/creator/15077.html
+
+> Swiper.js: https://b-risk.jp/blog/2022/04/swiper/
+
+
+### gsap フェードインアニメーション
+
+> 参考記事：https://junpei-sugiyama.com/gsap-scroll-fadein/
+
+
+### scrollIntoView
+
+- 指定された要素をビューポートの中央に配置するメソッド
+
+> 参考記事：https://developer.mozilla.org/ja/docs/Web/API/Element/scrollIntoView
+
+
