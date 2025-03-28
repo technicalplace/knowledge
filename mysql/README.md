@@ -14,3 +14,9 @@
 
 ### ER図
 > 参考記事：https://it-koala.com/entity-relationship-diagram-1897
+
+
+### 中間テーブル
+
+> 参考記事：https://arc.net/l/quote/gwwgneai
+> 参考記事：https://qiita.com/ramuneru/items/db43589551dd0c00fef9
