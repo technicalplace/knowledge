@@ -39,3 +39,10 @@ export const config = {
 - ルートハンドラーとはexpressやNest.jsで開発されていたAPIをNext.js上で開発するためのもの
 
 - デフォルトでは静的ビルドのため取得するデータが決まっている場合はいいが、SNSなどユーザーの動作によって取得するデータが変わる場合、データが更新されず古いデータが表示される問題が発生する
+
+
+### useActionState
+
+Next15でuseFormStateが非推奨になり、useActionStateが推奨になった
+戻り値の配列に`isPending`というサーバーアクションの状態を含められるようになった
+→`useFormStatus`も不要になる
