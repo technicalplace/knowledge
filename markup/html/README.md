@@ -32,3 +32,52 @@
 ### iOSでアニメーションがちらつくとき
 
 - `translateZ(0)`や`will-change: transform`を指定するやりかたもある
+
+
+### ejs テンプレートエンジン
+
+> 参考記事：https://zumilog.org/ejs-howto, https://shimizu-create.com/2023/05/878/
+
+> 便利な構文：https://qiita.com/y_hokkey/items/31f1daa6cecb5f4ea4c9
+
+
+### vite handlebars
+
+> 参考記事：https://zenn.dev/tamon_kondo/articles/e6aceb1ea15f4b
+
+
+### サイトマップ
+
+- ホームページの構造ツリー図にしたもの
+- サイトマップを作成することで、サイトの構造を把握しやすくなる
+  - カテゴリ、コンテンツをおおまかに分類する
+
+
+### ディレクトリマップ
+- ページの一覧表。必要なページをすべて洗い出す目的で使用する
+
+
+### 画像圧縮
+
+- pngquant
+> 参考記事：https://qiita.com/YutaManaka/items/bb5f634f7233e6a4ff49
+
+`pngquant --ext .png --force --speed 1 画像までのパス`
+
+### 画像リサイズ
+
+- sips
+> 参考記事：https://www.digitalboo.net/post/13612/sips
+
+`sips -Z リサイズしたいサイズ パス/ファイル名`
+
+
+### LCP(Largest Contentful Paint)
+
+
+### CLS(Cumulative Layout Shift)
+
+
+### INP (Interaction to Next Paint)
+
+- ユーザーのアクションに対するブラウザの応答時間を評価する指標
