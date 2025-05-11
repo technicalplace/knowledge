@@ -64,3 +64,14 @@ $(document): jQueryのシンタックスで、documentオブジェクトをjQuer
 - アニメーションを作成するためのJavaScriptライブラリ
 
 > 参考記事 : https://qiita.com/k_watanabe_51/items/264542b564187d95a3e4
+
+
+### History API
+
+- popstate
+  - ブラウザの戻る・進むボタンが押されたときに発生するイベントを実装に組み込むことができる
+
+- scrollRestoration
+  - ブラウザの戻る・進むボタンが押され、履歴間の移動があったときにスクロール位置を制御できる
+
+> 参考記事：https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event
